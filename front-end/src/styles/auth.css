@@ -1,0 +1,85 @@
+
+/* AUTH PAGES (Login / Register) */
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: var(--cream);
+  background-image:
+    radial-gradient(ellipse 70% 60% at 15% 10%, rgba(217,119,6,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 50% at 85% 90%, rgba(120,113,108,0.06) 0%, transparent 60%);
+}
+
+.auth-card {
+  background: var(--paper);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-xl);
+  padding: 44px 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: var(--shadow-lg);
+}
+
+.auth-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.auth-logo-mark {
+  width: 40px;
+  height: 40px;
+  background: var(--ink);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cream);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 20px;
+}
+
+.auth-logo-text {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.auth-heading {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.auth-subheading {
+  font-size: 0.875rem;
+  color: var(--ink-muted);
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+.auth-footer a {
+  color: var(--amber);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.auth-footer a:hover { text-decoration: underline; }
+
+@media (max-width: 768px) {
+  .auth-card { padding: 32px 24px; }
+}

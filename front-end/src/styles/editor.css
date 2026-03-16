@@ -1,0 +1,258 @@
+
+/* CREATE / EDIT NOTE PAGE */
+
+.note-editor-page {
+  padding: 40px 0 80px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* ── Page header ── */
+.editor-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 36px;
+  flex-wrap: wrap;
+}
+
+.editor-topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.editor-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+
+.editor-breadcrumb a {
+  color: var(--ink-muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.editor-breadcrumb a:hover { color: var(--ink); }
+
+.editor-breadcrumb-sep {
+  color: var(--ink-faint);
+  font-size: 0.75rem;
+}
+
+.editor-breadcrumb-current {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.editor-topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Editor Card ── */
+.editor-card {
+  background: var(--paper);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.editor-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--amber) 0%, #F59E0B 50%, #EF4444 100%);
+  border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+/* ── Title Input ── */
+.editor-title-input {
+  width: 100%;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  outline: none;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  padding: 0;
+  margin-bottom: 6px;
+  resize: none;
+}
+
+.editor-title-input::placeholder {
+  color: var(--ink-faint);
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* ── Divider ── */
+.editor-divider {
+  width: 100%;
+  height: 1px;
+  background: var(--border-soft);
+  margin: 20px 0;
+}
+
+/* ── Content Textarea ── */
+.editor-content-input {
+  width: 100%;
+  min-height: 320px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--ink-soft);
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: vertical;
+  padding: 0;
+}
+
+.editor-content-input::placeholder {
+  color: var(--ink-faint);
+}
+
+/* ── Editor Footer ── */
+.editor-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 1px solid var(--border-soft);
+  flex-wrap: wrap;
+}
+
+.editor-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.editor-char-count {
+  font-size: 0.78rem;
+  color: var(--ink-faint);
+  font-weight: 400;
+}
+
+.editor-footer-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* NOTE DETAIL PAGE */
+
+.note-detail-page {
+  padding: 40px 0 80px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.note-detail-header {
+  margin-bottom: 32px;
+}
+
+.note-detail-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.note-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.note-detail-date {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  font-weight: 400;
+}
+
+.note-detail-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  background: var(--amber-light);
+  color: var(--amber);
+  border-radius: 99px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid rgba(217,119,6,0.2);
+}
+
+.note-detail-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.note-detail-title em {
+  font-style: italic;
+  color: var(--amber);
+}
+
+.note-detail-divider {
+  width: 48px;
+  height: 3px;
+  background: var(--amber);
+  border-radius: 99px;
+  margin: 20px 0;
+}
+
+.note-detail-body {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--ink-soft);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Detail actions floating bar */
+.note-detail-actions-bar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .note-editor-page,
+  .note-detail-page   { padding: 28px 0 60px; }
+  .editor-card        { padding: 28px 24px; border-radius: var(--radius-lg); }
+  .editor-topbar      { flex-direction: column; align-items: flex-start; }
+  .editor-footer      { flex-direction: column; align-items: flex-start; }
+  .note-detail-title  { font-size: 2rem; }
+  .note-detail-topbar { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 480px) {
+  .editor-card        { padding: 22px 18px; border-radius: var(--radius-md); }
+  .editor-title-input { font-size: 1.5rem; }
+}
