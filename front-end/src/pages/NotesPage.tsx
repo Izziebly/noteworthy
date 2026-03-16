@@ -1,4 +1,4 @@
-import { useNotes } from "../context/useNotes";
+import { useNotes } from "../hooks/useNotes";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import "../styles/notes.css";

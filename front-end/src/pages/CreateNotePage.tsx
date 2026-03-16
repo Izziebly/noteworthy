@@ -1,4 +1,4 @@
-import { useCreateNote } from "../context/useNotes";
+import { useCreateNote } from "../hooks/useNotes";
 import Navbar from "../components/Navbar";
 import "../styles/editor.css";
 
