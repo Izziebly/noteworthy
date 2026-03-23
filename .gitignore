@@ -24,3 +24,31 @@ npm-debug.log*
 
 #database
 database/
+
+new-nestjs-backend/node_modules/
+new-nestjs-backend/.env
+new-nestjs-backend/dist/
+
+# ── Web (React) ──
+reactjs-web/node_modules/
+reactjs-web/.env
+reactjs-web/dist/
+
+# ── Mobile (Flutter) ──
+flutter-mobile-frontend/build/
+flutter-mobile-frontend/.dart_tool/
+flutter-mobile-frontend/.flutter-plugins
+flutter-mobile-frontend/.flutter-plugins-dependencies
+flutter-mobile-frontend/android/.gradle/
+flutter-mobile-frontend/android/local.properties
+flutter-mobile-frontend/ios/.symlinks/
+flutter-mobile-frontend/ios/Pods/
+
+# ── Old Express (if keeping) ──
+old-express-backend/node_modules/
+old-express-backend/.env
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+*.log
